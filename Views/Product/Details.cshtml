@@ -1,0 +1,20 @@
+@model Gallery.Entity.Product
+
+<h1>Ürün Detayları - @Model.Name</h1>
+
+<div class="row">
+    @foreach (var image in Model.Images)
+    {
+        <div class="col-md-3">
+            <img src="@Url.Content(image.Url)" class="img-thumbnail" alt="Product Image">
+        </div>
+    }
+</div>
+
+<hr />
+
+<div>
+    <p><strong>Ürün Adı:</strong> @Model.Name</p>
+    <p><strong>Açıklama:</strong> @Model.Description</p>
+    <!-- Diğer ürün bilgileri buraya eklenebilir -->
+</div>
