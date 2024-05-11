@@ -58,7 +58,6 @@
 	letter-spacing: 0.2rem;
 	text-decoration: none;
 	color: white;
-	text-transform: uppercase;
 	padding: 20px;
 	display: block;
 }
@@ -189,13 +188,34 @@ header.hero {
   padding-bottom: 80px;
 }
 
+header.heroo {
+  background: rgb(31, 30, 30); no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 100px;
+}
+
 header.hero .hero-text {
   margin-top: 20%;
   margin-bottom: 20%;
 }
+
+header.heroo .heroo-text {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
 header.hero .row {
   position: relative;
 }
+
+header.heroo .row {
+  position: relative;
+}
+
 a.menu {
   position: absolute;
   right: 0;
@@ -221,6 +241,21 @@ header.hero h3 {
 header.hero .btn {
   margin: 3em 0;
 }
+
+header.heroo h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.5em;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+header.heroo h1 span,
+header.heroo h3 {
+  font-weight: 300;
+}
+header.heroo .btn {
+  margin: 3em 0;
+}
+
 
 ul.social-links li {
   display: inline-block;
@@ -416,7 +451,7 @@ h1.heading.pink:after {
 
 /* Contact Banner */
 .contact-banner {
-  background:#ddd1ff repeat;
+  background:#cbbdef repeat;
   color: #fff;
   padding: 6em;
 }
@@ -574,7 +609,7 @@ ul.main-nav li a {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform:lowercase;
   padding: 5px 15px;
 }
 ul.main-nav li a:hover {
@@ -599,10 +634,57 @@ ul.main-nav.show-it {
   align-items: center; 
    gap: 95px;
 }
+/*Kurucumuz*/
+.founder-info {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.founder-info img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+@media (max-width: 576px) {
+  .founder-info img {
+    width: 150px;
+    height: 150px;
+  }
+}
+/*Kurucumuz Emd*/
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* iconlar */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #55ACEE;
+  color: white;
+}
 
 
-
-
+/* iconlar end*/
 
 /* Let's optimise it for mobile devices */
 
@@ -650,6 +732,21 @@ ul.main-nav.show-it {
     font-size: 1.2em;
     line-height: 1.6em;
   }
+
+  header.heroo {
+    text-align: center;
+    padding-bottom: 0;
+  }
+  header.heroo h1 {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  header.heroo h3 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+  }
+
+
   ul.social-links li.label {
     display: block;
     font-size: 16px;
@@ -713,6 +810,13 @@ ul.main-nav.show-it {
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 780px) {
+
+  .contact-banner .container #contactMap .map{
+    margin-top: 25px;
+  }
+
+
+
 	/* header */
 	#header .hamburger {
 		display: none;

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MpI0XQDZqKgaAOxk9693WyHpFC2rTdoGpYnUPGLUGsw=",
+  "Hash": "nSCNP58DPKbbH4nZjyUSDV9bh26+sUVdp68LcjkiBd0=",
   "Source": "Gallery",
   "BasePath": "_content/Gallery",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\bannerResim.jpg"
     },
     {
+      "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\ercansekerci.jpg",
+      "SourceId": "Gallery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\",
+      "BasePath": "_content/Gallery",
+      "RelativePath": "assets/ercansekerci.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\ercansekerci.jpg"
+    },
+    {
       "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\github.png",
       "SourceId": "Gallery",
       "SourceType": "Discovered",
@@ -117,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\github.png"
+    },
+    {
+      "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\instaicon.png",
+      "SourceId": "Gallery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\",
+      "BasePath": "_content/Gallery",
+      "RelativePath": "assets/instaicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\instaicon.png"
     },
     {
       "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\masa.jpg",
@@ -153,6 +187,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\menu.png"
     },
     {
+      "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\misyonumuz.png",
+      "SourceId": "Gallery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\",
+      "BasePath": "_content/Gallery",
+      "RelativePath": "assets/misyonumuz.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\misyonumuz.png"
+    },
+    {
       "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\sandalye.jpg",
       "SourceId": "Gallery",
       "SourceType": "Discovered",
@@ -170,6 +221,40 @@
       "OriginalItemSpec": "wwwroot\\assets\\sandalye.jpg"
     },
     {
+      "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\Soru.jpg",
+      "SourceId": "Gallery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\",
+      "BasePath": "_content/Gallery",
+      "RelativePath": "assets/Soru.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Soru.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\tarihcemiz.jpeg",
+      "SourceId": "Gallery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\",
+      "BasePath": "_content/Gallery",
+      "RelativePath": "assets/tarihcemiz.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\tarihcemiz.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\twitter.png",
       "SourceId": "Gallery",
       "SourceType": "Discovered",
@@ -185,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\twitter.png"
+    },
+    {
+      "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\vizyonumuz.jpeg",
+      "SourceId": "Gallery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\",
+      "BasePath": "_content/Gallery",
+      "RelativePath": "assets/vizyonumuz.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\vizyonumuz.jpeg"
     },
     {
       "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\css\\bootstrap-theme.css",
@@ -253,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\css\\sb-admin-2.min.css",
+      "SourceId": "Gallery",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\",
+      "BasePath": "_content/Gallery",
+      "RelativePath": "css/sb-admin-2.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\sb-admin-2.min.css"
     },
     {
       "Identity": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\css\\style.css",

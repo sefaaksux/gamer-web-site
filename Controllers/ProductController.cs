@@ -23,6 +23,23 @@ public class ProductController : Controller
         return View();
     }
 
+    public IActionResult Menu(string category)
+    {
+        if(category != null)
+        {
+            if(category == "sandalye")
+            {
+                var Product = _context.products.Where(x => x.Category.CategoryId == 2).Include(x => x.Images).ToList();
+                return View(Product);
+            }else if(category == "masa"){
+                var Product = _context.products.Where(x => x.Category.CategoryId == 1).Include(x => x.Images).ToList();
+                return View(Product);
+            }
+        }
+
+        return View();
+    }
+
     
     public IActionResult Details(int id)
     {

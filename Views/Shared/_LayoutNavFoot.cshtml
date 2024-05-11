@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Helze - Mobilya</title>
+
+  <!-- Bootstrap -->
+  <link href="~/css/bootstrap.min.css" rel="stylesheet">
+  <link href="~/css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="~/css/swiper.min.css">
+  <link href="~/css/style.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
+
+    </head>
+    <body>
+      <header class="heroo">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-6 col-xs-12">
+              <!-- Header -->
+                        @await Html.PartialAsync("_NavbarMenu")
+              <!-- End Header -->
+              <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        @RenderBody()
+      </div>
+
+
+      <!-- Footer -->
+        @await Html.PartialAsync("_Footer")
+      <!-- Footer End-->
+      
+
+      <!-- Some Javascript -->
+      <script src="~/js/jquery-2.1.1.js"></script>
+      <script src="~/js/swiper.jquery.min.js"></script>
+      <!-- Initialize Client Swiper -->
+      <script>
+      var swiper1 = new Swiper('.client-swiper', {
+        slidesPerView: 3,
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 60,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination'
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          }
+        }
+      });
+      // Initialize Testimonial Swiper
+      var swiper2 = new Swiper('.testimonial-swiper', {
+        slidesPerView: 3,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        grabCursor: true,
+        freeMode: true,
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          }
+        }
+      });
+      </script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="~/js/jquery.counterup.min.js"></script>
+      <script>
+          const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const header = document.querySelector('.header.container');
+
+hamburger.addEventListener('click', () => {
+	hamburger.classList.toggle('active');
+	mobile_menu.classList.toggle('active');
+});
+
+document.addEventListener('scroll', () => {
+	var scroll_position = window.scrollY;
+	if (scroll_position > 200) {
+		header.style.backgroundColor = '#29323c';
+	} else {
+		header.style.backgroundColor = 'transparent';
+	}
+});
+
+menu_item.forEach((item) => {
+	item.addEventListener('click', () => {
+		hamburger.classList.toggle('active');
+		mobile_menu.classList.toggle('active');
+	});
+});
+
+      </script>
+
+      <!-- Google Analytics - You should remove this -->
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-29231762-2', 'auto');
+      ga('send', 'pageview');
+
+      </script>
+    </body>
+    </html>

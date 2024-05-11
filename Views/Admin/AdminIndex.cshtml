@@ -1,0 +1,83 @@
+﻿@using Gallery.Models
+
+@{
+    Layout = "_Dashboard";
+    ViewData["Title"] = "Admin Page";
+}
+@section Styles { 
+    <link href="~/css/myCss.css" rel="stylesheet">
+}
+
+<h1 style="text-align: center; color: rgb(59, 59, 59); font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Admin Panel</h1>
+
+<div class="imagem" style="background-color: black;">
+    <img src="~/logo.webp" alt="">
+</div>
+<hr>
+<div class="row">
+    <div class="col-md-4 mt-3">
+        <p>
+            Ürün Bilgi / <a asp-controller="Admin" asp-action="Menu" asp-route-category="hepsi" class="btn btn-info btn-sm">Tüm Ürünleri Göster</a>
+        </p>
+    </div>
+    <div class="col-md-8">
+        <a asp-controller="Create" asp-action="Index" class="btn btn-primary mt-3">Yeni Ürün Ekle</a>
+        <a asp-controller="Create" asp-action="Kampanya" asp-route-category="kampanya" class="btn btn-success mt-3">Kampanya Ekle</a>
+        <a asp-controller="Create" asp-action="Etkinlik" asp-route-category="etkinlik" class="btn btn-info mt-3">Etkinlik Oluştur</a>
+    </div>
+    <div class="mt-3"><p> (Ürünler <b>güncellemek</b> veya <b>silmek</b> isterseniz, yan taraftaki kategoriler ile ürün seçimi yapınız.)</p></div>
+    
+</div>
+<div class="row mt-3">
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            Masalar (Adet)</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                            @if (Model != null && Model.MasaCount != null)
+                            {
+                              @Model.MasaCount
+                            }
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            SANDALYELER (ADET)</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                        
+                            @if (Model != null && Model.SandalyeCount != null)
+                            {
+                              @Model.SandalyeCount
+                            }
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Earnings (Monthly) Card Example -->
+
+ </div>
+    <!--END-->

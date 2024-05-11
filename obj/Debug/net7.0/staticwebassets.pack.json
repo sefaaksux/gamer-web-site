@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Gallery.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\Soru.jpg",
+      "PackagePath": "staticwebassets\\assets\\Soru.jpg"
+    },
+    {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\arrow-left.png",
       "PackagePath": "staticwebassets\\assets\\arrow-left.png"
     },
@@ -17,8 +21,16 @@
       "PackagePath": "staticwebassets\\assets\\bannerResim.jpg"
     },
     {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\ercansekerci.jpg",
+      "PackagePath": "staticwebassets\\assets\\ercansekerci.jpg"
+    },
+    {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\github.png",
       "PackagePath": "staticwebassets\\assets\\github.png"
+    },
+    {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\instaicon.png",
+      "PackagePath": "staticwebassets\\assets\\instaicon.png"
     },
     {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\masa.jpg",
@@ -29,12 +41,24 @@
       "PackagePath": "staticwebassets\\assets\\menu.png"
     },
     {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\misyonumuz.png",
+      "PackagePath": "staticwebassets\\assets\\misyonumuz.png"
+    },
+    {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\sandalye.jpg",
       "PackagePath": "staticwebassets\\assets\\sandalye.jpg"
     },
     {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\tarihcemiz.jpeg",
+      "PackagePath": "staticwebassets\\assets\\tarihcemiz.jpeg"
+    },
+    {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\twitter.png",
       "PackagePath": "staticwebassets\\assets\\twitter.png"
+    },
+    {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\assets\\vizyonumuz.jpeg",
+      "PackagePath": "staticwebassets\\assets\\vizyonumuz.jpeg"
     },
     {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\css\\bootstrap-theme.css",
@@ -51,6 +75,10 @@
     {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\css\\sb-admin-2.min.css",
+      "PackagePath": "staticwebassets\\css\\sb-admin-2.min.css"
     },
     {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\css\\style.css",

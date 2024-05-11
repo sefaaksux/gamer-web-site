@@ -12,6 +12,7 @@
   <link href="~/css/bootstrap-theme.css" rel="stylesheet">
   <link rel="stylesheet" href="~/css/swiper.min.css">
   <link href="~/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
@@ -22,29 +23,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-md-offset-6 col-xs-12">
-                        <!-- Header -->
-              <section id="header">
-                <div class="header container">
-                  <div class="nav-bar">
-                    <div class="brand">
-                      <a href="#hero">
-                        <h1><span>H</span>el<span>z</span>e</h1>
-                      </a>
-                    </div>
-                    <div class="nav-list">
-                      <div class="hamburger">
-                        <div class="bar"></div>
-                      </div>
-                      <ul >
-                        <li><a href="#anasayfa" data-after="Home">Anasayfa</a></li>
-                        <li><a href="#services" data-after="Service">Portfolyo</a></li>
-                        <li><a href="#hakkimizda" data-after="Projects">Hakkımızda</a></li>          
-                        <li><a href="#iletisim" data-after="Contact">İletişim</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </section>
+              <!-- Header -->
+                        @await Html.PartialAsync("_Navbar")
               <!-- End Header -->
               <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
               <div class="hero-text" id="anasayfa">
@@ -53,7 +33,7 @@
                 <a href="#neler" class="btn btn-lg btn-primary">Daha Fazlası</a>
                 <ul class="social-links">
                   <li class="label">Bizimle iletişime geçin</li>
-                  <li><a href="#"><img src="~/assets/twitter.png"></a></li>
+                  <li><a href="#"><img src="~/assets/instaicon.png"></a></li>
                   
                 </ul>
               </div>
@@ -64,6 +44,12 @@
 
       <section class="case-study" id="neler">
         <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="heading purple"><span class="purple">Başak Klasik</span> Kimdir? <br></h1>
+              <p style="font-family:Arial, Helvetica, sans-serif; font-size: 17px; margin-top: 15px;"> Sanata ve emeğe değer veren, bünyesinde bulundurduğu onlarca çalışanı ve iş birliği içerisinde bulunduğu kıymetli tedarikçileriyle, Klasik mobilya ve Avantgarde mobilya üretiminde sektörün en güçlü adayı olma yolunda özgüvenle ilerleyen bir firmadır. 4500 metrekare entegre üretim ve showroom tesisi ile müşterilerinin ihtiyacına hızlı şekilde karşılık veren, yurtiçi ve yurtdışı siparişlerini hızla ve güvenle teslim ederek aldığı olumlu dönütlerle günden güne büyüyen bir firmadır.</p>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-12">
               <h4 class="sub-heading">Helze Masa Sandalye</h4>
@@ -87,7 +73,7 @@
                           </div>
                           
                           <div class="card-footer">
-                            <a href="#" class="btn btn-primary"> GÖRÜNTÜLE </a>
+                            <a asp-route-category="masa" asp-controller="Product" asp-action="Menu" class="btn btn-primary"> GÖRÜNTÜLE </a>
                           </div>
                         </div>
                       </div>
@@ -105,7 +91,7 @@
                           </div>
                           
                           <div class="card-footer">
-                            <a href="#" class="btn btn-primary"> GÖRÜNTÜLE </a> 
+                            <a asp-route-category="sandalye" asp-controller="Product" asp-action="Menu" class="btn btn-primary"> GÖRÜNTÜLE </a> 
                           </div>
                         </div>
                       </div>
@@ -113,15 +99,15 @@
                     </div>
                   </div>                             
                 </div>
-                
+                <section id="hakkimizda"></section>
               </div>
               
             </div>
           </div>
         </div>
       </section>
-
-      <section class="testimonial" id="hakkimizda">
+      
+      <section class="testimonial" >
         <div class="container">
           <div class="row">
             <div class="col-md-12 mb-5">
@@ -133,34 +119,63 @@
           <div class="row">
             <div class="col-md-6">
               <div class="about-img">
-                <img src="~/assets/masa.jpg" alt="" style="max-width: 300px; margin-top: 15px;">
+                <img src="~/assets/tarihcemiz.jpeg" alt="" style="width: 100%; margin-top: 15px;">
               </div>
             </div>
             <div class="col-md-6">
-              <h2>Biz kimiz?</h2> <br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem rem consequuntur minima. Quas a temporibus natus neque blanditiis voluptates nemo, molestias quaerat, illo possimus qui provident doloremque itaque. Repellat, asperiores.
-              Dolor, rerum illum? Doloremque sunt sit quis, provident, saepe perferendis repudiandae similique dolorum animi, culpa autem aut quod odit et totam. Quaerat itaque cum quis saepe in provident. Quibusdam, dicta.</p>
+              <h2>Tarihçemiz</h2> <br>
+              <p style="font-family:Arial, Helvetica, sans-serif;"> İkinci kuşak olarak toplamda yarım asırlık tecrübemizle klasik mobilya sektöründe BAŞAK KLASİK ailesi olarak, önceki yıllarda imalatçı olarak sektöre katkıda bulunmuş olup son 25 yıldır da üretim ve satış olarak mobilya sektöründe adımızdan söz ettirmeye devam ediyoruz. Ürettiğimiz ürünlerde kalite, sağlamlık ve müşteri memnuniyetinden asla ödün vermeden ilk günkü heyecanı ürettiğimiz her modele yansıtmayı kendimize ilke edindik. Ürettiğimiz her ürünün bir öncekinden daha çekici ve şık olmasına özen göstererek kendimize ait çizgimizi müşterilerimizden aldığımız enerjiyle şekillendirerek ağacı sanata dönüştürmenin haklı gururunu yıllar boyu yaşıyoruz. Günden güne, yenilikçi tasarım fikirleriyle kendini yenileyen ekibimiz, değerli dost ve müşterilerimizin yaşam alanlarına ince dokunuşlarla, tamamen el emeği işçiliğimizle unutulmaz eserler bırakmaya devam etmektedir.</p>
+              <h1 class="heading pink"><span class="pink"></span>  <br></h1>
             </div>
           </div>
-          <span id="iletisim"></span>
+          
+          <hr>
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Mizyonumuz</h2> <br>
+              <p style="font-family:cursive;">BAŞAK KLASİK ailesi olarak; farklı tasarımlar geliştirerek müşterilerimizin yaşam alanlarını kendilerinin zevkleri ve isteği doğrultusunda dizayn ederek memnuniyetlerini sağlamaktır.</p> <br>
+              <h2>Vizyonumuz</h2> <br>
+              <p style="font-family:cursive;">BAŞAK KLASİK ailesi olarak; hünerlerimiz ve el işçiliğimizi birbirine harmanlayarak kaliteden asla ödün vermeden müşterilerimizin güvenini kazanmak ve yeniliklerle müşterilerimizi şaşırtarak mutluluklarına katkı sağlamaktır. Uluslararası ihracatlar ile ülkemizi, bayrağımızı ve Türk zanaatkarının hünerlerini tanıtmak, bunun yanı sıra yaptığımız ihracatlar ile ülke ekonomisine katkıda bulunmak en önemli ilkemizdir.</p>
+            </div>
+            <div class="col-md-6">
+              <div class="about-img">
+                <img src="~/assets/vizyonumuz.jpeg" alt="" style="width: 100%; margin-top: 15px;">
+              </div>
+            </div>
+          </div>
         </div>
         
       </section >
-
+      <div class="container text-center">
+        <h1 class="heading pink text-center"><span class="pink text-center"></span>  <br></h1>
+        <h2 class="mb-4">Kurucumuz</h2>
+        <div class="founder-info">
+          <img src="~/assets/ercansekerci.jpg" alt="Kurucu Resmi" class="rounded-circle mb-3">
+          <p style="margin-top: 30px;">Kurucumuz Sn. Ercan ŞEKERCİ, yılların vermiş olduğu deneyim, bilgi birikim ve vizyonu çalışma arkadaşlarıyla paylaşıp, şirketi daha ileri seviyelere taşıyarak yurt içi ve uluslar arası arenalarda adından söz ettirmeye devam etmektedir.</p>
+        </div>
+      </div>
 
 
       
       <!-- Contact Banner -->
+      <span id="iletisim"></span>
       <section class="contact-banner"  style="margin-top: 50px;">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 text-center">
+            <div class="col-md-8 text-center">
               <h1>Bizi arayın !</h1>
-              <a href="tel:+905444527654" class="btn btn-lg btn-primary">+90 544 452 7654</a>
+              <a href="tel:+905444527654" class="btn btn-lg btn-primary">0544 452 7654</a>
+              <li style="margin-top: 20px;">
+                <p>Sosyal Medya Hesablarımız</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+              </li>
+              
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4" id="contactMap" style="margin-top: 15px;">
               <div class="contact map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1645.7299741101444!2d35.31835331998982!3d37.032844718091525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15288ec3637175e9%3A0xd2164f8b5b33e21f!2sSherlock%20House%20Cafe!5e0!3m2!1str!2str!4v1709589784860!5m2!1str!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p style="color: white; font-size: 20px;">Mobilyacılar Sitesi Güzelevler Mah. <br> 2046 Sk. No: 17</p> <br> <b>Yüreğir/ADANA</b>
             </div>
             </div>
           </div>
@@ -168,26 +183,8 @@
       </section>
 
       <!-- Footer -->
-      <footer>
-        <div class="container-fluid">
-          <div class="row footer">
-            <div class="col-md-12 text-center">
-              <h1>Helze<br><span>Masa & Sandalye</span></h1>
-              <ul class="social-links">
-              
-                <li><a href="#"><img src="~/assets/twitter.png"></a></li>
-                <li><a href="#"><img src="~/assets/twitter.png"></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row sub-footer">
-            <div class="col-md-12 text-center">
-              <p>Helze | 2024</a></p>
-            </div>
-          </div>
-        </div>
-      </footer>
-      
+        @await Html.PartialAsync("_Footer")
+      <!-- Footer End-->
       @RenderBody()
 
       <!-- Some Javascript -->

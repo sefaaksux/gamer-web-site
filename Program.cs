@@ -6,9 +6,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<MyContext>();
+builder.Services.AddSession(Options => {
+    Options.IdleTimeout = TimeSpan.FromMinutes(60);
+    Options.Cookie.HttpOnly = true; // Oturum çerezinin yalnızca HTTP üzerinden iletilmesi sağlandı
+    Options.Cookie.IsEssential = true; // Çerez, GDPR uyumluluğu için gerekli olarak işaretlendi
+
+});
 
 var app = builder.Build();
-
+app.UseSession();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
