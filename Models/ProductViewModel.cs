@@ -9,13 +9,15 @@ namespace Gallery.Models
         [Required(ErrorMessage = "Ürün adı gereklidir.")]
         public string Name { get; set; }
 
-        public string Description { get; set; }
+        public string? Description { get; set; }
+
+        public decimal? Amount { get; set; }
 
         // Diğer özellikler eklenebilir
 
         [Display(Name = "Resimler")]
         public List<IFormFile> Images { get; set; }
 
-        public int CategoryId { get; set; } 
+        public int? CategoryId { get; set; } 
     }
 }

@@ -56,8 +56,9 @@ public class AdminController : Controller
         {
             
             if(Giris == "true")
-            {               
-                
+            {        
+                 ViewBag.MasaCount = _context.products.Where(x=>x.CategoryId == 1).Count();
+                 ViewBag.SandalyeCount = _context.products.Where(x=>x.CategoryId == 2).Count();
                  return View();
             }else{
                 return RedirectToAction("Index");
@@ -76,7 +77,7 @@ public class AdminController : Controller
         
             if(category == "hepsi")
             {
-                var allProduct = await _context.products.ToListAsync();
+                var allProduct = await _context.products.Include(x => x.Images).ToListAsync();
                 return View(allProduct);
             }else if(category == "kokteyl")
             {

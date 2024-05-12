@@ -37,6 +37,7 @@ public class CreateController : Controller
             {
                 Name = model.Name,
                 Description = model.Description,
+                Amount = model.Amount,  
                 CategoryId = model.CategoryId,
                 // Diğer özellikler
                 

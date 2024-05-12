@@ -113,6 +113,18 @@
       "PackagePath": "staticwebassets\\fonts\\glyphicons-halflings-regular.woff2"
     },
     {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\06964993-9f1f-41cd-bdf5-e87e337c1828.png",
+      "PackagePath": "staticwebassets\\images\\06964993-9f1f-41cd-bdf5-e87e337c1828.png"
+    },
+    {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\06bec3c8-7b5c-428b-a8f8-8ddbb663e9e3.png",
+      "PackagePath": "staticwebassets\\images\\06bec3c8-7b5c-428b-a8f8-8ddbb663e9e3.png"
+    },
+    {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\1fb0cc9a-5ed5-4b1f-a274-be0868af051b.png",
+      "PackagePath": "staticwebassets\\images\\1fb0cc9a-5ed5-4b1f-a274-be0868af051b.png"
+    },
+    {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\23cd78d9-520a-47a3-914f-4ad59340a2e3.png",
       "PackagePath": "staticwebassets\\images\\23cd78d9-520a-47a3-914f-4ad59340a2e3.png"
     },
@@ -133,6 +145,14 @@
       "PackagePath": "staticwebassets\\images\\3ebf0a98-2ab4-40ce-94d9-3bf6e4b5590d.png"
     },
     {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\48566e6b-c78d-456c-bb29-346b60c6f35a.png",
+      "PackagePath": "staticwebassets\\images\\48566e6b-c78d-456c-bb29-346b60c6f35a.png"
+    },
+    {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\5c4039ed-d8ba-45c2-aeed-ce38c10e3277.jpg",
+      "PackagePath": "staticwebassets\\images\\5c4039ed-d8ba-45c2-aeed-ce38c10e3277.jpg"
+    },
+    {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\67c034ca-233e-42df-81e1-deb4b674af67.jpg",
       "PackagePath": "staticwebassets\\images\\67c034ca-233e-42df-81e1-deb4b674af67.jpg"
     },
@@ -145,8 +165,16 @@
       "PackagePath": "staticwebassets\\images\\74de4257-bc7e-4d78-989f-8e0834b5ba27.png"
     },
     {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\80c212d9-a496-4464-a361-4081802ac599.png",
+      "PackagePath": "staticwebassets\\images\\80c212d9-a496-4464-a361-4081802ac599.png"
+    },
+    {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\9a636340-fd8c-4eb6-a378-454b290d2412.png",
       "PackagePath": "staticwebassets\\images\\9a636340-fd8c-4eb6-a378-454b290d2412.png"
+    },
+    {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\9d2f0edb-77de-440e-97cd-9c44d577b76a.png",
+      "PackagePath": "staticwebassets\\images\\9d2f0edb-77de-440e-97cd-9c44d577b76a.png"
     },
     {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\a4b25389-241e-46ee-b1ef-63725e52c1e7.png",
@@ -165,8 +193,20 @@
       "PackagePath": "staticwebassets\\images\\b55d33ef-57c5-4ef0-87a1-989c053720be.jpg"
     },
     {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\bd7beaa7-4c58-4668-a7f0-a2a4ea337db2.png",
+      "PackagePath": "staticwebassets\\images\\bd7beaa7-4c58-4668-a7f0-a2a4ea337db2.png"
+    },
+    {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\cards.png",
       "PackagePath": "staticwebassets\\images\\cards.png"
+    },
+    {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\d0b9c3f5-c682-4b49-ae4c-f1010c23b33e.png",
+      "PackagePath": "staticwebassets\\images\\d0b9c3f5-c682-4b49-ae4c-f1010c23b33e.png"
+    },
+    {
+      "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\e1824e55-be54-4e3f-8c3b-028650b3a8c7.jpg",
+      "PackagePath": "staticwebassets\\images\\e1824e55-be54-4e3f-8c3b-028650b3a8c7.jpg"
     },
     {
       "Id": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\wwwroot\\images\\e66a0cc5-61bb-41a1-a59c-04df804d412d.jpg",

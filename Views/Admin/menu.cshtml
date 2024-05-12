@@ -1,0 +1,67 @@
+﻿@using Gallery.Entity
+@using Gallery.Data
+@using Gallery.Models
+@model List<Gallery.Entity.Product>
+    @{
+    Layout = "_Dashboard";
+    ViewData["Title"] = "Ürünler";
+    }
+    @{
+        <h1 style="text-align: center;">@ViewBag.category</h1>
+    }
+
+    <hr>
+    <a asp-controller="Create" asp-action="Index" class="btn btn-primary ml-3">Yeni Ekle</a>
+
+    <div class="row">
+        <div class="col-md-12 mt-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Başlık Ara...">
+        </div>
+    </div>
+
+    <div class="row" id="productList">
+        @foreach(var item in Model)
+        {
+
+        <div class="card col-md-3 mt-3">
+            <div>
+                @{
+                    if (item.Images != null)
+                    {
+                    <img class="card-img-top" src="@Url.Content(item.Images.FirstOrDefault()?.Url)" alt="Product Image">
+                    }
+                    else
+                    {
+                    <p>Resim Yok.</p>
+                    }
+                }
+            </div>
+            <div class="card-body">
+                <div class="card-title" style="font-weight:900;">@item.Name</div> <!-- Düzeltildi -->
+                <div class="card-text">
+                    <p>@item.Description</p>
+
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-info">@item.Amount TL</button>
+                <a class="btn btn-primary" asp-action="Index" asp-controller="Update" asp-route-id="@item.ProductId" style="width: 90px;">Güncelle</a>
+                <a class="btn btn-danger" asp-action="Index" asp-controller="Delete" asp-route-id="@item.ProductId" style="width: 70px;">Sil</a>
+            </div>
+        </div>
+
+}
+    </div>
+
+    @section JavaScriptt {
+        <script>
+            $(document).ready(function () {
+                $("#searchInput").on("input", function () {
+                    var value = $(this).val().toLowerCase();
+                    $("#productList .card").filter(function () {
+                        $(this).toggle($(this).find(".card-title").text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });
+        </script>
+    }
