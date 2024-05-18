@@ -38,7 +38,6 @@ public class AdminController : Controller
                 if(user)
                 {              
                     HttpContext.Session.SetString("IsUserLoggedIn","true");
-                    
                     return View("AdminIndex");
                 }
                 
@@ -79,19 +78,21 @@ public class AdminController : Controller
             {
                 var allProduct = await _context.products.Include(x => x.Images).ToListAsync();
                 return View(allProduct);
-            }else if(category == "kokteyl")
+            }else if(category == "masalar")
             {
-                // var filteredProduct = await _context.products
-                //                             .Include(x => x.Tablo)
-                //                             .Where(x => x.tabloId == 17 || x.tabloId == 25)
-                //                             .ToListAsync();
-                return View();
+                var filteredProduct = await _context.products
+                                            .Include(x => x.Category)
+                                            .Where(x => x.CategoryId == 1)
+                                            .ToListAsync();
+                return View(filteredProduct);
             }
-            else{
-                // var filteredProduct = await _context.urunler
-                //                             .Include(x => x.Tablo)
-                //                             .Where(x => x.Tablo.tabloName == category)
-                //                             .ToListAsync();
+            else if(category == "sandalyeler"){
+                var filteredProduct = await _context.products
+                                            .Include(x => x.Category)
+                                            .Where(x => x.CategoryId == 2)
+                                            .ToListAsync();
+                return View(filteredProduct);
+            }else{
                 return View();
             }
         }else{

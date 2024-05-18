@@ -16,7 +16,7 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
-
+    @RenderSection("style", required:false)
 </head>
     <body>
       <header class="heroo">
@@ -31,16 +31,16 @@
           </div>
         </div>
       </header>
-      <div class="container">
+      
         @RenderBody()
-      </div>
+      
 
 
       <!-- Footer -->
         @await Html.PartialAsync("_Footer")
       <!-- Footer End-->
       
-
+      @RenderSection("script", required: false)
       <!-- Some Javascript -->
       <script src="~/js/jquery-2.1.1.js"></script>
       <script src="~/js/swiper.jquery.min.js"></script>

@@ -10,7 +10,7 @@ namespace Gallery.Entity
 
         public decimal? Amount { get; set; }
 
-        // Bir ürüne birden fazla resim eklemek için Image koleksiyonu
+        
         public ICollection<Image> Images { get; set; }
 
         public int? CategoryId { get; set; }
