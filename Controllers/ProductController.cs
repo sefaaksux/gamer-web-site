@@ -27,11 +27,11 @@ public class ProductController : Controller
     {
         if(category != null)
         {
-            if(category == "sandalye")
+            if(category == "uc")
             {
                 var Product = _context.products.Where(x => x.Category.CategoryId == 2).Include(x => x.Images).ToList();
                 return View(Product);
-            }else if(category == "masa"){
+            }else if(category == "hesap"){
                 var Product = _context.products.Where(x => x.Category.CategoryId == 1).Include(x => x.Images).ToList();
                 return View(Product);
             }
