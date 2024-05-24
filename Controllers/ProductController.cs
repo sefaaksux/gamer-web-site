@@ -48,6 +48,15 @@ public class ProductController : Controller
         {
             return NotFound();
         }
+        
+        if(product.CategoryId == 1)
+        {
+            ViewBag.Category = "masa";
+        }else if(product.CategoryId == 2)
+        {
+            ViewBag.Category = "sandalye";
+        }
+
         return View(product);
     }
     

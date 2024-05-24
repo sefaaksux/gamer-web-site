@@ -1,8 +1,10 @@
+@inject Microsoft.AspNetCore.Mvc.IUrlHelper UrlHelper
 @model Gallery.Entity.Product
 @{
     Layout = "_LayoutNavFoot";
 }
-<div class="container">
+<div class="container detailcontainer" style="margin-top: 90px;">
+    <a asp-route-category="@ViewBag.Category" asp-controller="Product" asp-action="Menu"><h4>Geri gel</h4></a>
     <h1>Ürün Detayları - @Model.Name</h1>
     
     <div class="row">
@@ -11,7 +13,22 @@
             <div class="col-md-3">
                 <img src="@Url.Content(image.Url)" class="img-thumbnail" alt="Product Image">
             </div>
+            
         }
+        
+            
+                    @{
+                        if(Model.VideoUrl != null)
+                        {
+                            <video controls class="card-img-top videocontrol" style="width: 390px; height: 240px;">
+                                <source src="@Url.Content(Model.VideoUrl)" type="video/mp4">
+                                Tarayıcınız videoyu desteklemiyor.
+                            </video>
+                        }
+                        
+                        
+                    }
+      
     </div>
     
     <hr />

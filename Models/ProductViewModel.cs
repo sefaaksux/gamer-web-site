@@ -19,5 +19,8 @@ namespace Gallery.Models
         public List<IFormFile> Images { get; set; }
 
         public int? CategoryId { get; set; } 
+
+     
+        public IFormFile? VideoFile { get; set; } // Ürüne ait video dosyası
     }
 }

@@ -9,93 +9,93 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Gallery
 build_property.RootNamespace = Gallery
-build_property.ProjectDir = C:\Users\sefaa\OneDrive\Masaüstü\Gallery\
+build_property.ProjectDir = C:\Users\sefaa\OneDrive\Masaüstü\AksuPubg\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\sefaa\OneDrive\Masaüstü\Gallery
+build_property.MSBuildProjectDirectory = C:\Users\sefaa\OneDrive\Masaüstü\AksuPubg
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Admin/AdminIndex.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Admin/AdminIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Admin/Index.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Admin/menu.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Admin/menu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbWVudS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Create/Index.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Create/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3JlYXRlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Delete/Index.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Delete/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsZXRlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Home/Index.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Home/Privacy.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Product/Details.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Product/Menu.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Product/Menu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Shared/Error.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Shared/_Banner.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Shared/_Banner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CYW5uZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Shared/_Dashboard.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Shared/_Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Shared/_Footer.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Shared/_LayoutNavFoot.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Shared/_LayoutNavFoot.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXROYXZGb290LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Shared/_Navbar.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Shared/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Shared/_NavbarMenu.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Shared/_NavbarMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXJNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Update/Index.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Update/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXBkYXRlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/_ViewImports.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/_ViewStart.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sefaa/OneDrive/Masaüstü/Gallery/Views/Shared/_Layout.cshtml]
+[C:/Users/sefaa/OneDrive/Masaüstü/AksuPubg/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ecyjm3bss7

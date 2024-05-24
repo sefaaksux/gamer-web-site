@@ -1,3 +1,4 @@
+@inject Microsoft.AspNetCore.Mvc.IUrlHelper UrlHelper
 @model List<Gallery.Entity.Product>
 @{
     Layout = "_LayoutNavFoot";
@@ -19,65 +20,115 @@
             flex-direction: column;
             justify-content: space-between;
         }
+        .btn-with-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-with-icon img {
+            margin-left: 10px; /* Ikon ile metin arasına boşluk ekleyin */
+            width: 20px; /* Ikonun genişliğini ayarlayın */
+            height: 20px; /* Ikonun yüksekliğini ayarlayın */
+        }
     </style>
 }
 
 
 <div class="container" style="margin-top: 90px;">
-    <div class="row">
-        @foreach (var product in Model)
-        {
-            <div class="col-md-3">
-                <div class="card product-card">
-                    @{
-                        if (product.Images != null)
-                        {
-                            <img src="@Url.Content(product.Images.FirstOrDefault()?.Url)" class="card-img-top product-image" alt="@product.Name" />
-                        }
-                    }
-                    
-                    <div class="card-body">
-
-                        @{
-                            if(product.Name != null)
+    @if (Model == null || !Model.Any())
+    {
+        <div class="noProduct" style="text-align: center; background-color: rgb(215, 246, 250);  margin-bottom: 250px; padding: 50px;
+        border-radius: 5%;">
+            <h2>Ürünler pek yakında yüklenecektir..</h2>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var product in Model)
+            {
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <!-- @{
+                            if (product.VideoUrl != null)
                             {
-                                <h5 class="card-title">@product.Name</h5>
+                                <video controls class="card-img-top product-image">
+                                    <source src="@Url.Content(product.VideoUrl)" type="video/mp4">
+                                    Tarayıcınız videoyu desteklemiyor.
+                                </video>
                             }
-
+                        } -->
+                        
+                        @{
+                            if (product.Images != null)
+                            {
+                                <img src="@Url.Content(product.Images.FirstOrDefault()?.Url)" class="card-img-top product-image" alt="@product.Name" />
+                            }
                         }
+                        <!-- @{
+                            if (product.Images != null)
+                            {
+                                <video controls class="card-img-top product-image">
+                                    <source src="@Url.Content(product.VideoUrl)" type="video/mp4">
+                                    Tarayıcınız videoyu desteklemiyor.
+                                </video>
+                            }
+                        } -->
                         
-
-
+                        
+                        <div class="card-body">
                             @{
-                                
+                                if(product.Name != null)
+                                {
+                                    <h2 class="card-title">@product.Name</h2>
+                                }
+                            }
+                            
+                            @{
                                 if(product.Description != null)
+                                {
+                                    if (product.Description.Length > 20)
                                     {
-                                        if (product.Description.Length > 20)
-                                                {
-                                                    <p class="card-text">@Html.Raw(product.Description.Substring(0, 20))...</p>
-                                                }
-                                                else
-                                                {
-                                                    <p class="card-text">@product.Description</p>
-                                                }
+                                        <p class="card-text">@Html.Raw(product.Description.Substring(0, 20))...</p>
                                     }
-                                                
-                                }
-
-                                @{
-                                    if(product.Amount != null)
+                                    else
                                     {
-                                        <p class="card-text"><strong>@product.Amount</strong></p>
+                                        <p class="card-text">@product.Description</p>
                                     }
-
                                 }
-                        
-                        <a href="#" class="btn btn-primary">İncele</a>
+                            }
+                            
+                            @{
+                                if(product.Amount != null)
+                                {
+                                    <p class="card-text"><strong>@product.Amount TL</strong></p>
+                                }
+                            }
+                            
+                            @{
+                                var productName = product.Name ?? string.Empty;
+                                var productDescription = product.Description ?? string.Empty;
+                                var productUrl = UrlHelper.Action("Details", "Product", new { id = product.ProductId }, protocol: Context.Request.Scheme);
+                                var message = $"\"{productName}\" adlı ve \"{productDescription}\" açıklamalı ürününüzü almak istiyorum. Bilgi verir misiniz? Ürün linki: {productUrl}";
+                                var encodedMessage = Uri.EscapeDataString(message);
+                                var whatsappUrl = $"https://wa.me/+905435068162?text={encodedMessage}";
+                            }
+                            <a href="@whatsappUrl" class="btn btn-success btn-with-icon" target="_blank">Mesaj Gönder
+                                <img src='@Url.Content("~/assets/wpicon.png")' alt="WhatsApp Icon" >
+                            </a>
+                            
+                            <br>
+                            
+                            <a asp-action="Details" asp-controller="Product" asp-route-id="@product.ProductId"class="btn btn-primary btn-with-icon">İncele
+                                <img src='@Url.Content("~/assets/details.png")' alt="WhatsApp Icon" >
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        }
-    </div>
+            }
+        </div>
+    }
+    
 </div>
 
 
@@ -87,81 +138,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 }
   
-    <!-- <div class="container" style="margin-top: 50px;">
-        
-            <h1>Ürünler Listesi</h1>
-            
-            <div class="row" style="margin-bottom:150px; margin-top:50px; margin-left:15px;">
-                @foreach (var product in Model)
-                {               
-                        <div class="card box-shadow" style="margin-bottom: 50px;">
-                            <div class="col-md-4" style="height: 400px; width: 300px; margin-top:15px; padding:15px">
-                            
-                                @{
-                                    if (product.Images != null)
-                                    {
-                                        <div class="imagem">
-                                            <img class="card-img-top" src="@Url.Content(product.Images.FirstOrDefault()?.Url)" alt="" style="object-fit: fill;"> 
-                                        </div>
-                                    }
-                                    else
-                                    {
-                                        <p>Resim Yok.</p>
-                                    }
-                                }
-                            
-                                <div class="card-body">
-                                    <h5 class="card-title">
-
-                                        @{
-                                            if(product.Name != null)
-                                            {
-                                                if (product.Name.Length > 20)
-                                                {
-                                                <p class="card-text">@Html.Raw(product.Name.Substring(0, 20))...</p>
-                                                }
-                                                else
-                                                {
-                                                <p class="card-text">@product.Name</p>
-                                                }
-                                            }else{
-                                                <span>YOOOKK</span>
-                                            }
-                                        }
-                                    </h5>
-                                    @{
-                                        if(product.Description != null)
-                                        {
-                                            if (product.Description.Length > 20)
-                                            {
-                                                <p class="card-text">@Html.Raw(product.Description.Substring(0, 20))...</p>
-                                            }
-                                            else
-                                            {
-                                                <p class="card-text">@product.Description</p>
-                                            }
-                                        }else{
-                                        <span>_</span>
-                                        }
-                                    }
-                                </div>
-
-                                <div class="card-footer">
-                                    @{
-                                        if(product.Amount != null)
-                                        {
-                                        <p class="card-text">@product.Amount</p>
-                                        }else{
-                                        <span>_</span>
-                                        }
-                                    }
-                                    <div>
-                                        <a asp-action="Details" asp-controller="Product" asp-route-id="@product.ProductId" class="btn btn-primary">Detaylar</a>
-                                    </div>
-                                </div>                          
-                            </div> 
-                        </div>
-
-                }
-            </div>
-    </div> -->
+    

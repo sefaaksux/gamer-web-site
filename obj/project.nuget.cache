@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uUewDy9tp4C9Tu0SR7A2bsEG0lg0SWAWNbach5nTvlTWOXtR6KR8ntyNgR5fD7+qG42QxqdsIpMNmizwvQhUoQ==",
+  "dgSpecHash": "98I0RRRr4Uj4uHpkXomYD69Q+8cWNd4DxcaVbYqno5rgZbf+5LhUYcn3JRnK3eyusIa2VyRI854I6fgmvSVLAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\Gallery\\Gallery.csproj",
+  "projectFilePath": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\AksuPubg\\Gallery.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sefaa\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\sefaa\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

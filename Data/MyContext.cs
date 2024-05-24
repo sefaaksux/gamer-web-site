@@ -8,7 +8,7 @@ namespace Gallery.Data
        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS; Database=mobilya; TrustServerCertificate=True; Integrated Security=true;");
+            optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS; Database=DbAksuPubg; TrustServerCertificate=True; Integrated Security=true;");
         }
 
       

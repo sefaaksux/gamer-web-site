@@ -15,6 +15,8 @@ namespace Gallery.Entity
 
         public int? CategoryId { get; set; }
         public virtual Category Category { get; set; }
+
+        public string? VideoUrl { get; set; } // Ürüne ait video URL'si
     }
     
 }

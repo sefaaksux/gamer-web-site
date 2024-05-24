@@ -26,41 +26,56 @@ public class CreateController : Controller
     }
 
 
-     [HttpPost]
-     [ValidateAntiForgeryToken]
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Index(ProductViewModel model)
     {
         ViewBag.Categories = new SelectList(_context.categories.ToList(),"CategoryId","CategoryName");
         if (ModelState.IsValid)
         {
-            Product product = new Product
+            var product = new Product
             {
                 Name = model.Name,
                 Description = model.Description,
                 Amount = model.Amount,  
                 CategoryId = model.CategoryId,
                 // Diğer özellikler
-                
-                Images = model.Images.Select(image =>
-                {
-                    var imageName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
-                    var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", imageName);
-                    using (var stream = new FileStream(imagePath, FileMode.Create))
-                    {
-                        image.CopyTo(stream);
-                    }
-                    return new Image { Url = "/images/" + imageName };
-                }).ToList()
             };
+
+            // Video dosyasını işle
+            if (model.VideoFile != null)
+            {
+                var videoName = Guid.NewGuid().ToString() + Path.GetExtension(model.VideoFile.FileName);
+                var videoPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/videos", videoName);
+                using (var stream = new FileStream(videoPath, FileMode.Create))
+                {
+                    await model.VideoFile.CopyToAsync(stream);
+                }
+                product.VideoUrl = "/videos/" + videoName; // Video dosyasının URL'sini atama
+            }
+
+            // Resim dosyalarını işle
+            product.Images = model.Images.Select(image =>
+            {
+                var imageName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
+                var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", imageName);
+                using (var stream = new FileStream(imagePath, FileMode.Create))
+                {
+                    image.CopyTo(stream);
+                }
+                return new Image { Url = "/images/" + imageName };
+            }).ToList();
 
             _context.Add(product);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }else{
+        }
+        else
+        {
             return View();
         }
-        
     }
+
 
     
 
