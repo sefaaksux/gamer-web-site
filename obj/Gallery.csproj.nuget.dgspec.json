@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\AksuPubg\\Gallery.csproj": {}
+    "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\gamer-web-site\\Gallery.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\AksuPubg\\Gallery.csproj": {
+    "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\gamer-web-site\\Gallery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\AksuPubg\\Gallery.csproj",
+        "projectUniqueName": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\gamer-web-site\\Gallery.csproj",
         "projectName": "Gallery",
-        "projectPath": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\AksuPubg\\Gallery.csproj",
+        "projectPath": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\gamer-web-site\\Gallery.csproj",
         "packagesPath": "C:\\Users\\sefaa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\AksuPubg\\obj\\",
+        "outputPath": "C:\\Users\\sefaa\\OneDrive\\Masaüstü\\gamer-web-site\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"

@@ -1,6 +1,6 @@
 
 
- .brand h1 {
+.brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
 	color: white;
@@ -179,7 +179,7 @@ img {
 
 /* Hero Section */
 header.hero {
-  background: url(../images/espor.jpg) no-repeat center center fixed;
+  background: url(../images/esporr.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
